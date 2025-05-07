@@ -1,0 +1,273 @@
+@import url(common.css);
+
+* {
+    box-sizing: border-box;
+  }
+
+.g-container{
+    width: 100%;
+    height: 100%;
+    /* margin: auto;
+    display: flex;
+    justify-content: center; */
+}
+
+.container {
+    margin: auto;
+    max-width: 1280px;
+}
+
+header, footer {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+    max-width: 150px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav {
+    width: auto;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* 아파트, 빌라,투룸... 과 로그인 서로 양쪽 끝 배치 */
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 아파트, 빌라,투룸... 과 로그인 각각각 스타일 적용용 */
+.menu_side {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.img_list {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.circle {
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+main {
+    border: 1px solid #000;
+    height: 700px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_parents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_style {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.circle_list {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content {
+    flex: 1;
+    align-items: center;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    /* margin-right: px; */
+}
+.search_btn {
+    font-size: 15px;
+    background-color: orange;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.search {
+    border-radius: 12px;
+    display: flex;
+    border: solid;
+    border-color: #ccc;
+    width: 70%;
+    height:fit-content;
+    gap: 20;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_text {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.click_content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 5px;
+}
+
+/* 검색 아이콘 */
+.material-symbols-outlined {
+    font-size: 100px;
+}
+
+.buildings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.building_info {
+    background-color: white;
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 250px;
+    height: 300px;
+}
+
+.building_img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.building_details {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+
+.house_count {
+    background-color: rgb(255, 166, 0);
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.footer_style {
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.side_menu {
+    margin-top: 15px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #000;
+}
+
+.side_title {
+    border: 0 0 1px solid;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_text {
+    font-size: 20px;
+}
+
+.more_button {
+    font-size: 16px;
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.side_content{
+    border: 1px solid #000;
+    width: 100%;
+    height: 300px;
+
+}
+
+.text_line {
+    border: 1px solid #000;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side_news{
+    border: 1px solid #000;
+}
