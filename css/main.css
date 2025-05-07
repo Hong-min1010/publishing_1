@@ -17,7 +17,7 @@
     max-width: 1280px;
 }
 
-header, footer {
+header {
     height: auto;
     display: flex;
     flex-direction: row;
@@ -25,6 +25,14 @@ header, footer {
     width: 100%;
 }
 
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: static;
+}
 
 .logo {
     max-width: 150px;
@@ -89,6 +97,8 @@ main {
     margin: 50px 0;
     display: flex;
     flex-direction: row;
+    flex: 1 0 auto;
+    overflow: visible;
 }
 
 .main_parents {
@@ -96,6 +106,11 @@ main {
     height: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.main_top {
+    display: flex;
+    flex-direction: column;
 }
 
 .main_style {
@@ -154,16 +169,6 @@ main {
     color: gray;
 }
 
-
-.click_content {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    gap: 5px;
-}
-
 /* 검색 아이콘 */
 .material-symbols-outlined {
     font-size: 100px;
@@ -183,7 +188,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     border: 1px solid #000;
     width: 200px;
     height: 250px;
@@ -209,18 +214,8 @@ main {
 .house_count {
     background-color: rgb(255, 166, 0);
     border: none;
-    align-self: stretch;
     margin-top: auto;
-}
-
-.footer_style {
-    font-size: 12px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 100%;
-    list-style-type: none;
     margin-bottom: 10px;
 }
 
@@ -270,6 +265,33 @@ main {
     text-overflow: ellipsis;
 }
 
-.side_news{
-    /* border: 1px solid #000; */
+.banner_top {
+    width: 100%;
+    height: 400px;
+}
+
+.banner_img {
+    max-width: 1280px;
+    height: 100%;
+}
+
+.footer_style {
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.click_content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 5px;
 }
