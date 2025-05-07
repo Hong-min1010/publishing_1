@@ -179,15 +179,14 @@ main {
 }
 
 .building_info {
-    background-color: white;
     margin: 20px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #000;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
 }
 
 .building_img {
@@ -200,6 +199,7 @@ main {
 
 .building_details {
     width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 16px;
     color: black;
@@ -208,10 +208,9 @@ main {
 
 .house_count {
     background-color: rgb(255, 166, 0);
-    width: 100%;
-    font-size: 14px;
     border: none;
-    margin-bottom: 5px;
+    align-self: stretch;
+    margin-top: auto;
 }
 
 .footer_style {
@@ -222,22 +221,25 @@ main {
     width: 100%;
     height: 100%;
     list-style-type: none;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .side_menu {
+    margin: 0px 15px;
     margin-top: 15px;
     width: 320px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .side_title {
-    border: 0 0 1px solid;
+    align-items: center;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
     width: 100%;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -249,18 +251,18 @@ main {
 .more_button {
     font-size: 16px;
     width: 20%;
-    height: 100%;
+    height: 30px;
     border-radius: 5px;
 }
 
 .side_content{
-    border: 1px solid #000;
     width: 100%;
     height: 300px;
 
 }
 
 .text_line {
+    margin: 5px 0px;
     border: 1px solid #000;
     width: 100%;
     white-space: nowrap;
@@ -269,5 +271,5 @@ main {
 }
 
 .side_news{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
