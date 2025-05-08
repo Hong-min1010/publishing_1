@@ -11,39 +11,75 @@
     <div class="container">
         <!-- 헤더에 호버 추가 예정 -->
         <header>
-            <img class="logo" src="https://s.zigbang.com/v1/web/common/new/zigbangWeb_horizontal_on-line_new.png">
-            <div class="menu">
-                <div class="menu_side">
-                    <button class="button">
-                        <span class="nav">아파트</span> 
-                        <span class="detail">매매/전월세/신축분양</span>
+            <div class="header_top">
+                <img class="logo" src="https://s.zigbang.com/v1/web/common/new/zigbangWeb_horizontal_on-line_new.png">
+                <div class="menu_login">
+                    <button type="button" class="login_button">
+                        <div>로그인 및 회원가입</div>
                     </button>
-                    <button class="button">
-                        <span class="nav">빌라, 투룸</span>
-                        <span class="detail">신축분양/매매/전월세</span>
-                    </button>
-                    <button class="button">
-                        <span class="nav">원룸</span>
-                        <span class="detail">전월세</span>
-                    </button>
-                    <button class="button">
-                        <span class="nav">오피스텔</span>
-                        <span class="detail">도시형생활주택/매매/전월세</span>
-                    </button>
-                    <button class="button">
-                        <span class="nav">상가</span>
-                        <span class="detail">임대/매매</span>
-                    </button>
-                </div>
-                <div class="menu_side">
-                    <button class="button">
-                        <span class="nav">로그인 및 회원가입</span>
-                    </button>
-                    <button class="button">
-                        <span class="nav">중개사무소 가입 및 상품 문의</span>
-                    </button>
+                    <div class="login_side">중개사무소 가입 및 상품문의</div>
                 </div>
             </div>
+            <ul class="menu_main">
+                <li class="menu_side">
+                    <div class="menu_side">
+                        <a class="menu_title" href="#none">아파트</a>
+                        <!-- 수정해야됨 -->
+                        <span>매매/전월세/신축분양</span>
+                    </div>
+                    <ul class="mini_title">
+                        <li>매매/전월세</li>
+                        <li>신축분양</li>
+                        <li>인구흐름</li>
+                    </ul>
+                </li>
+                <li class="menu_side">
+                    <div class="menu_side">
+                        <a class="menu_title" href="#none">빌라, 투룸+</a>
+                        <span>신축분양/매매/전월세</span>
+                    </div>
+                    <ul class="mini_title">
+                        <li>빌라, 투룸 찾기</li>
+                        <li>찜한 매물</li>
+                        <li>빌라 내놓기(매매/전월세)</li>
+                    </ul>
+                </li>
+                <li class="menu_side">
+                    <div class="menu_side">
+                        <a class="menu_title" href="#none">원룸</a>
+                        <span>전월세</span>
+                    </div>
+                    <ul class="mini_title">
+                        <li>방 찾기</li>
+                        <li>찜한 매물</li>
+                        <li>방 내놓기(전월세만)</li>
+                    </ul>
+                </li>
+                <li class="menu_side">
+                    <div class="menu_side">
+                        <a class="menu_title" href="#none">오피스텔</a>
+                        <span>도시형생활주택/매매/전월세/</span>
+                    </div>
+                    <ul class="mini_title">
+                        <li>오피스텔 찾기</li>
+                        <li>찜한 매물</li>
+                        <li>오피스텔 내놓기(매매/전월세)</li>
+                    </ul>
+                </li>
+                <li class="menu_side">
+                    <div class="menu_side">
+                        <a class="menu_title" href="#none">상가</a>
+                        <span>임대/매매</span>
+                    </div>
+                    <ul class="mini_title">
+                        <li>상가·점포</li>
+                        <li>사무실</li>
+                        <li>공유오피스</li>
+                        <li>찜한 매물</li>
+                        <li>상가 내놓기</li>
+                    </ul>
+                </li>
+            </ul>
         </header>
         <!-- 헤더 끝 -->
         <!-- 메인 circle ClickEvent 추가 예정 -->
@@ -242,6 +278,44 @@
                 </div>
                 <div class="banner_top">
                     <img class="banner_img" src="assets/banner/banner(1).png"/>
+                    <div class="banner_boxes">
+                        <div class="banner_box">
+                            <div class="box_direction">
+                                <div class="icon_circle">
+                                    <img class="building_icon" src="assets/icon/apt.png" alt="apt_icon"></img>
+                                </div>
+                                <div class="box_text">아파트형 상품</div>
+                            </div>
+                            <img class="next_icon" src="assets/icon/next.png">
+                        </div>
+                        <div class="banner_box">
+                            <div class="box_direction">
+                                <div class="icon_circle">
+                                    <img class="building_icon" src="assets/icon/one_room.png" alt="one_room_icon"></img>
+                                </div>
+                                <div class="box_text">원룸형 상품</div>
+                            </div>
+                            <img class="next_icon" src="assets/icon/next.png">
+                        </div>
+                        <div class="banner_box">
+                            <div class="box_direction">
+                                <div class="icon_circle">
+                                    <img class="building_icon" src="assets/icon/officetel.png" alt="officetel_icon"></img>
+                                </div>
+                                <div class="box_text">오피스텔/도시형생활주택 상품</div>
+                            </div>
+                            <img class="next_icon" src="assets/icon/next.png">
+                        </div>
+                        <div class="banner_box">
+                            <div class="box_direction">
+                                <div class="icon_circle">
+                                    <img class="building_icon" src="assets/icon/villa.png" alt="villa_icon"></img>
+                                </div>
+                                <div class="box_text">빌라/투룸+ 상품</div>
+                            </div>
+                            <img class="next_icon" src="assets/icon/next.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -269,36 +343,3 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
-<!-- 아파트 -->
-<ul>
-    <li>매매/전월세</li>
-    <li>신축분양</li>
-    <li>인구흐름</li>
-</ul>
-<!-- 빌라, 투룸 -->
-<ul>
-    <li>빌라, 투룸 찾기</li>
-    <li>찜한 매물</li>
-    <li>빌라 내놓기(매매/전월세)</li>
-</ul>
-<!-- 원룸룸 -->
-<ul>
-    <li>방 찾기</li>
-    <li>찜한 매물</li>
-    <li>방 내놓기(전월세만)</li>
-</ul>
-<!-- 오피스텔텔 -->
-<ul>
-    <li>오피스텔 찾기</li>
-    <li>찜한 매물</li>
-    <li>오피스텔 내놓기(매매/전월세)</li>
-</ul>
-<!-- 상가 -->
-<ul>
-    <li>상가·점포</li>
-    <li>사무실</li>
-    <li>공유오피스</li>
-    <li>찜한 매물</li>
-    <li>상가 내놓기</li>
-</ul>
