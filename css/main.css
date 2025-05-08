@@ -113,6 +113,10 @@ footer {
     cursor: pointer;
 }
 
+.menu_side:hover {
+    background-color: #e6e2e2;
+}
+
 .button {
     width: fit-content;
     display: flex;
