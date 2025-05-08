@@ -11,7 +11,6 @@
 <body>
     <div class="g-container">
     <div class="container">
-        <!-- 헤더에 호버 추가 예정 -->
         <header>
             <div class="header_top">
                 <img class="logo" src="https://s.zigbang.com/v1/web/common/new/zigbangWeb_horizontal_on-line_new.png">
@@ -83,13 +82,13 @@
             </ul>
         </header>
         <!-- 헤더 끝 -->
-        <!-- 메인 circle ClickEvent 추가 예정 -->
         <main>
             <div class="main_top">
                 <div class="main_style">
                     <div class="main_parents">
-                        <div class="circle_list">
-                            <div class="circle_info">
+                        <!-- 탭 -->
+                        <div id="tab" class="circle_list">
+                            <div data-alt="tab1" class="circle_info">
                                 <span class="circle">
                                     <img class="img_list" src="assets/villa.png">
                                 </span>
@@ -97,7 +96,7 @@
                                     아파트
                                 </div>
                             </div>
-                            <div class="circle_info">
+                            <div data-alt="tab2" class="circle_info">
                                 <span class="circle">
                                     <img class="img_list" src="assets/villa.png">
                                 </span>
@@ -105,7 +104,7 @@
                                     빌라, 투룸+
                                 </div>
                             </div>
-                            <div class="circle_info">
+                            <div data-alt="tab3" class="circle_info">
                                 <span class="circle">
                                     <img class="img_list" src="assets/villa.png">
                                 </span>
@@ -113,7 +112,7 @@
                                     원룸
                                 </div>
                             </div>
-                            <div class="circle_info">
+                            <div data-alt="tab4" class="circle_info">
                                 <span class="circle">
                                     <img class="img_list" src="assets/villa.png">
                                 </span>
@@ -121,7 +120,7 @@
                                     오피스텔
                                 </div>
                             </div>
-                            <div class="circle_info">
+                            <div data-alt="tab5" class="circle_info">
                                 <span class="circle">
                                     <img class="img_list" src="assets/villa.png">
                                 </span>
@@ -129,8 +128,8 @@
                                     상가
                                 </div>
                             </div>
-
                         </div>
+
                         <div class="main_content">
                             <div class="search">
                                 <div class="search_text">
@@ -140,7 +139,9 @@
                                     <span class="material-symbols-outlined" style="font-size: 35px;">search</span>
                                 </button>
                             </div>
-                            <div class="buildings">
+                            <!-- 탭 메뉴 -->
+                             <!-- 아파트 -->
+                            <div id="tab1" class="buildings">
                                 <figure class="building_info">
                                     <img class="building_img" src="assets/apt/asher_apt.jpg" alt="apt_img">
                                     <figcaption class="building_details">
@@ -238,6 +239,402 @@
                                         <button class="house_count" type="button">매물개수 12개</button>
                                 </figure>
                             </div>
+                            <!-- 빌라 -->
+                            <div id="tab2" class="buildings">
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/1000-170.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 1,000/170</div>
+                                    </figcaption>
+                                    <button class="house_count" type="button">40m² 2층 투룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/165-165.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 165/165</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">49m² 1층 원룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/180-144.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 180/144</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">42m² 2층 원룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/180-180.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 180/180</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">49.57m² 4층 투룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/2000-160.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 반포동</div>
+                                        <div>월세 2,000/160</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">72.73m² 1층 쓰리룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/220-220.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 220/220</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">82m² 2층 투룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/300-240.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 반포동</div>
+                                        <div>월세 300/240</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">32.29m² 2층 원룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/3000-250.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 반포동</div>
+                                        <div>월세 3,000/250</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">60.68m² 2층 투룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/3_5000.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 반포동</div>
+                                        <div>전세 3억 5,000</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">52.89m² 3층 투룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/3_6000.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 반포동</div>
+                                        <div>전세 3억 6,000</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">28.94m² 3층 투룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/4_1000.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>전세 4억 1,000</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">60.01m² 1층 쓰리룸</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/villa/5000-160.png" alt="villa_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 5,000/160</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">60m² 2층 투룸</button>
+                                </figure>
+                            </div>
+                            <!-- 원룸 -->
+                            <div id="tab3" class="buildings">
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/100-70.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 100/70</div>
+                                    </figcaption>
+                                    <button class="house_count" type="button">24.5m² 2층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/100-80.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 100/80</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">28.05m² 4층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/1000-90.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 1,000/90</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">37.8m² 1층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/110-80.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 110/80</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">29.7m² 3층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/120-85.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 120/85</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">27.5m² 4층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/200-100.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 200/100</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">24.5m² 2층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/200-115.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 200/115</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">34.5m² 2층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/2000-90.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 2,000/90</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">39.5m² 2층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/5500-100.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 반포동</div>
+                                        <div>월세 5,500/100</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">50.4m² 3층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/70-70.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 70/70</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">23.8m² 1층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/85-85.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 서초동</div>
+                                        <div>월세 85/85</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">20m² 옥탑방</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/one_room/90-90.png" alt="one_room_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 90/90</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">26.52m² 5층</button>
+                                </figure>
+                            </div>
+                            <!-- 오피스텔 -->
+                            <div id="tab4" class="buildings">
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/1000-150.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 1000/150</div>
+                                    </figcaption>
+                                    <button class="house_count" type="button">55.05m² 8층/19층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/1000-168.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 서초동</div>
+                                        <div>월세 1000/168</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">61.05m² 13층/20층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/1000-80.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 서초동</div>
+                                        <div>월세 1000/80</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">57.35m² 12층/16층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/1000-90.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 서초동</div>
+                                        <div>월세 1000/90</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">54.97m² 15층/18층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/200-550.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 200/550</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">119.15m² 중층/22층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/2000-140.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 2000/140</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">124.49m² 12층/29층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/2000-150.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 2000/150</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">33.4m² 중층/17층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/300-230.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 300/230</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">51.78m² 12층/19층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/3000-264.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 3000/264</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">121.39m² 16층/19층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/3000-379.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>서초구 서초동</div>
+                                        <div>월세 3000/379</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">124.18m² 7층/19층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/80-80.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 80/80</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">42m² 8층/10층</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/officetel/95-95.png" alt="officetel_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 95/95</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">54.95m² 7층/18층</button>
+                                </figure>
+                            </div>
+                            <!-- 상가 -->
+                            <div id="tab5" class="buildings">
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/1500-164.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 1,500/164</div>
+                                    </figcaption>
+                                    <button class="house_count" type="button">130.23m² 기타</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/1_2000-1100.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 1억 2,000/1,100</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">135.52m² 병원</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/2000-175.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 2,000/175</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">132.23m² 한식/고기집</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/2000-200.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 2,000/200</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">51.69m² 퓨전/쌀국수</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/3000-220.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 3,000/220</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">118.87m² 기타</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/3000-302.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 3,000/302</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">123.1m² 미용/피부관리/네일</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/5000-400.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 5,000/400</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">119m² 기타</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/6000-250.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 6,000/250</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">132.23m² 요가/마사지</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/6000-491.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 6,000/491</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">126.98m² 학원/학업관련</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/6000-538.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 6,000/538</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">165.29m² 편의점/슈퍼</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/7000-650.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 7,000/650</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">79.6m² 기타주점</button>
+                                </figure>
+                                <figure class="building_info">
+                                    <img class="building_img" src="assets/shop/7000-685.png" alt="shop_img">
+                                    <figcaption class="building_details">
+                                        <div>강남구 역삼동</div>
+                                        <div>월세 7,000/685</div>
+                                    </figcaption>
+                                        <button class="house_count" type="button">188.4m² 중식</button>
+                                </figure>
+                            </div>
                         </div>
                     </div>
                     <div class="side_menu">
@@ -304,18 +701,18 @@
                         <div class="banner_box">
                             <div class="box_direction">
                                 <div class="icon_circle">
-                                    <img class="building_icon" src="assets/icon/officetel.png" alt="officetel_icon"></img>
+                                    <img class="building_icon" src="assets/icon/villa.png" alt="villa_icon"></img>
                                 </div>
-                                <div class="box_text">오피스텔/도시형생활주택 상품</div>
+                                <div class="box_text">빌라/투룸+ 상품</div>
                             </div>
                             <img class="next_icon" src="assets/icon/next.png">
                         </div>
                         <div class="banner_box">
                             <div class="box_direction">
                                 <div class="icon_circle">
-                                    <img class="building_icon" src="assets/icon/villa.png" alt="villa_icon"></img>
+                                    <img class="building_icon" src="assets/icon/officetel.png" alt="officetel_icon"></img>
                                 </div>
-                                <div class="box_text">빌라/투룸+ 상품</div>
+                                <div class="box_text">오피스텔/도시형생활주택 상품</div>
                             </div>
                             <img class="next_icon" src="assets/icon/next.png">
                         </div>

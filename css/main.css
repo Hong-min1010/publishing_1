@@ -180,6 +180,10 @@ main {
     align-items: center;
 }
 
+.circle_info.active .circle {
+    background-color: #fff5e1;
+}
+
 .main_content {
     flex: 1;
     align-items: center;

@@ -12,6 +12,27 @@ $(document).ready(function () {
       $(this).find(".mini_title").stop().slideUp();
     });
 
+    // Tap
+    $('#tab .circle_info').click(function() {
+        // 1. 모든 탭에서 active 클래스 제거
+        $('#tab .circle_info').removeClass('active');
+        // 2. 클릭한 탭에 active 클래스 추가
+        $(this).addClass('active');
+
+        // 3. 모든 데이터(건물 목록) 숨김
+        $('.main_content .buildings').hide();
+
+        // 4. 클릭한 탭의 data-alt 값을 가져옴 (예: tab1, tab2, ...)
+        var tabId = $(this).attr('data-alt');
+        // 5. 해당 id를 가진 div만 보여줌 (id는 tab1, tab2, ...)
+        $('#' + tabId).show();
+    });
+
+    // 페이지 로드시 default -> 1번 Tab
+    $('#tab .circle_info').first().addClass('active');
+    $('.main_content .buildings').hide();
+    $('#tab1').show();
+
     //Banner Swipe
     $('.swiper').slick({
         // 한줄
