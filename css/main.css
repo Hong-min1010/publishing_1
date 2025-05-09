@@ -4,14 +4,21 @@
     box-sizing: border-box;
   }
 
-.g-container{
-    width: 100%;
-    height: 100%;
+.g-container {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
-    margin: auto;
-    max-width: 1280px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  min-height: 0;
 }
 
 header {
@@ -20,23 +27,33 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    box-shadow: 0px 10px 5px #dbdbdb;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header_top {
-    width: 100%;
+    width: 1280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 footer {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: static;
+  width: 100%;
+  /* margin-top: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+  margin: 30px 0px;
+  box-shadow: 0px -8px 8px #e3e3e3;
 }
+
 /* img class = "logo" */
 .header_top > img {
     max-width: 200px;
@@ -80,6 +97,7 @@ footer {
     width: fit-content;
     height: auto;
     cursor: pointer;
+    gap: 8px;
 }
 
 /* .login_side {
@@ -109,19 +127,34 @@ footer {
     z-index: 1;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 1280px;
     margin-top: 10px;
+    padding: 6px 0px;
 }
 
 .menu_main::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 65px;
     background-color: #fcb18b;
-    left: 0;
+    transform: translateX(-50%);
+    left: 50%;
     top: 0;
     z-index: -1;
+    pointer-events: none;
+}
+
+.menu_main::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: #fbceb7;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    z-index: -2;
     pointer-events: none;
 }
 
@@ -187,18 +220,15 @@ footer {
 }
 
 main {
-    /* border: 1px solid #000; */
-    /* height: 700px; */
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    flex: 1 0 auto;
-    overflow: visible;
+  flex: 1 0 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .person_img {
     justify-content: center;
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
@@ -222,6 +252,7 @@ main {
 
 .main_style {
     height: 700px;
+    margin: 30px 0px;
     display: flex;
     flex-direction: row;
 }
@@ -240,10 +271,11 @@ main {
 }
 
 .main_content {
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu_title {
@@ -306,17 +338,22 @@ main {
 }
 
 .buildings {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    scroll-behavior: smooth;
-    height: 100%;
-    overflow-y: auto;
-    margin-top: 10px;
+  padding-top: 15px;
+  flex: 1 1 0;
+  min-height: 0;
+  max-height: 700px; /* 원하는 높이 */
+  gap: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  border: 1px solid #000;
 }
 
 .building_info {
-    margin: 20px 15px;
+    /* margin: 15px 15px; */
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -325,9 +362,12 @@ main {
     width: 200px;
     height: 250px;
     cursor: pointer;
+    box-shadow: 3px 5px 8px #c3c3c3;
 }
 
 .building_img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -354,11 +394,11 @@ main {
 
 .side_menu {
     margin: 0px 15px;
-    margin-top: 15px;
     width: 320px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 30px;
+    justify-content: center;
     /* border: 1px solid #000; */
 }
 
@@ -391,8 +431,7 @@ main {
 }
 
 .text_line {
-    margin: 5px 0px;
-    border: 1px solid #000;
+    margin: 10px 0px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -406,7 +445,8 @@ main {
     flex-direction: row;
     width: 100%;
     height: 600px;
-    margin: 30px 0px;
+    margin-top: 30px;
+    margin-bottom: 130px;
 }
 
 .swiper {
@@ -453,14 +493,43 @@ main {
     gap: 10px;
 }
 
-.icon_circle {
-    background-color: rgb(255, 238, 221);
+/* banner_box의 (1)번째 자식 .box_direction 안의 span 태그에 적용 */
+.banner_box:nth-child(1) .box_direction > span {
+    background-color: #FFE9A0;
     border-radius: 50%;
-    /* border: 1px solid #000; */
     width: 50px;
     height: 50px;
     padding: 5px;
 }
+.banner_box:nth-child(2) .box_direction > span {
+    background-color: #FFEEDD;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.banner_box:nth-child(3) .box_direction > span {
+    background-color: #FFEEDD;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.banner_box:nth-child(4) .box_direction > span {
+    background-color: #DDF2FF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+/* .icon_circle {
+    background-color: rgb(255, 238, 221);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+} */
 
 .building_icon {
     width: 100%;
@@ -484,10 +553,9 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-    height: 90%;
     list-style-type: none;
-    margin-bottom: 50px;
     flex-shrink: 0;
+    margin-top: 15px;
 }
 
 .click_content {
@@ -499,3 +567,8 @@ main {
     gap: 5px;
     cursor: pointer;
 }
+
+ul.slick-dots li button::before {
+    font-size: 12rpx;
+}
+
