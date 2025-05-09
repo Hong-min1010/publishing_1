@@ -37,13 +37,58 @@ footer {
     width: 100%;
     position: static;
 }
-
-.logo {
+/* img class = "logo" */
+.header_top > img {
     max-width: 200px;
     height: 100%;
     object-fit: contain;
     cursor: pointer;
 }
+
+/* .logo {
+    max-width: 200px;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+} */
+
+.menu_login > button {
+    font-size: 16px;
+    width: fit-content;
+    padding: 0px 10px;
+    height: 80%;
+    margin-right: 15px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* .login_button {
+    font-size: 16px;
+    width: fit-content;
+    padding: 0px 10px;
+    height: 80%;
+    margin-right: 15px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+} */
+
+.menu_login > div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+}
+
+/* .login_side {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+} */
 
 .nav {
     width: 20%;
@@ -60,11 +105,24 @@ footer {
 }
 
 .menu_main {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 1px solid #000;
     margin-top: 10px;
+}
+
+.menu_main::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fcb18b;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .menu_login {
@@ -72,25 +130,6 @@ footer {
     align-items: center;
     max-width: 600px;
     gap: 10px;
-}
-
-.login_button {
-    font-size: 16px;
-    width: fit-content;
-    padding: 0px 10px;
-    height: 80%;
-    margin-right: 15px;
-    border: 1px solid #000;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.login_side {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: auto;
-    cursor: pointer;
 }
 
 /* 아파트, 빌라,투룸... 과 로그인 각각각 스타일 적용용 */
@@ -109,12 +148,11 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: start;
-    border: 1px solid #000;
     cursor: pointer;
 }
 
-.menu_side:hover {
-    background-color: #e6e2e2;
+.mini_title > .mini_direction:hover {
+    font-weight: bold;
 }
 
 .button {
@@ -158,11 +196,23 @@ main {
     overflow: visible;
 }
 
+.person_img {
+    justify-content: center;
+    width: 300px;
+    height: auto;
+}
+
+.person_img > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
 .main_parents {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .main_top {
@@ -177,9 +227,10 @@ main {
 }
 
 .circle_list {
-    width: 120px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -220,7 +271,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
-    /* margin-right: px; */
 }
 .search_btn {
     font-size: 15px;
@@ -262,6 +312,7 @@ main {
     scroll-behavior: smooth;
     height: 100%;
     overflow-y: auto;
+    margin-top: 10px;
 }
 
 .building_info {
