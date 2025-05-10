@@ -199,13 +199,21 @@ footer {
     margin-left: 10px;
 }
 
-.img_list {
+.circle > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
     display: block;
 }
+
+/* .img_list {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+} */
 
 .circle {
     cursor: pointer;
@@ -238,6 +246,14 @@ main {
     height: 100%;
 }
 
+.main_bgimg {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main_parents {
     width: 100%;
     height: 100%;
@@ -248,6 +264,7 @@ main {
 .main_top {
     display: flex;
     flex-direction: column;
+    width: 1280px;
 }
 
 .main_style {
@@ -325,12 +342,19 @@ main {
     justify-content: space-between;
 }
 
-.search_text {
+.search > div {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray; 
+}
+
+/* .search_text {
     margin-left: 20px;
     font-size: 16px;
     font-weight: bold;
     color: gray;
-}
+} */
 
 /* 검색 아이콘 */
 .material-symbols-outlined {
@@ -352,8 +376,7 @@ main {
 }
 
 .building_info {
-    /* margin: 15px 15px; */
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -365,7 +388,39 @@ main {
     box-shadow: 3px 5px 8px #c3c3c3;
 }
 
-.building_img {
+.img_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img_box > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.img_box > div {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ffb74d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 16px;
+    z-index: 2;
+    pointer-events: none;
+    /* letter-spacing: -1px; */
+}
+
+/* .building_img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
@@ -373,24 +428,46 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+
+.building_info > figcaption {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
-.building_details {
+/* .building_details {
     width: 100%;
     height: 100%;
     text-align: center;
     font-size: 16px;
     color: black;
     background-color: white;
-}
+} */
 
-.house_count {
+/* .building_info > div {
     background-color: rgb(255, 166, 0);
     border: none;
     margin-top: auto;
     width: 100%;
     margin-bottom: 10px;
 }
+
+/* .house_count {
+    background-color: rgb(255, 166, 0);
+    border: none;
+    margin-top: auto;
+    width: 100%;
+    margin-bottom: 10px;
+} */
 
 .side_menu {
     margin: 0px 15px;
@@ -399,7 +476,13 @@ main {
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    align-items: center;
     /* border: 1px solid #000; */
+}
+
+.menu_tab {
+    width: 100%;
+    height: fit-content;
 }
 
 .side_title {
@@ -523,14 +606,6 @@ main {
     padding: 5px;
 }
 
-/* .icon_circle {
-    background-color: rgb(255, 238, 221);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-} */
-
 .building_icon {
     width: 100%;
     height: 100%;
@@ -569,6 +644,6 @@ main {
 }
 
 ul.slick-dots li button::before {
-    font-size: 12rpx;
+    font-size: 12px;
 }
 
