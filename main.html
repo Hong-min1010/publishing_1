@@ -14,9 +14,10 @@
             <div class="header_top">
                 <img src="https://s.zigbang.com/v1/web/common/new/zigbangWeb_horizontal_on-line_new.png">
                 <div class="menu_login">
-                    <button type="button">
-                        <div>로그인 및 회원가입</div>
-                    </button>
+                    <div>
+                        <div class="login">로그인</div>
+                        <div class="login">회원가입</div>
+                    </div>
                     <div>
                         <div class="login_side">중개사무소 가입 및 상품문의</div>
                         <img class="next_icon" src="assets/icon/next.png">
@@ -92,9 +93,6 @@
                             <img src="assets/person.png" alt="person_img" />
                         </div>
                         <div class="main_parents">
-                            <!-- <div class="main_bgimg">
-                                <img src="assets/main.png">
-                            </div> -->
                             <!-- 탭 -->
                             <div id="tab" class="circle_list">
                                 <div data-alt="tab1" class="circle_info">
@@ -178,7 +176,7 @@
                                         </div>
                                         <figcaption>
                                             <div>서초동아타워</div>
-                                            <div>매매 14억 2,000 ~ 17억 3,000</div>
+                                            <div class="ellipsis">매매 14억 2,000 ~ 17억 3,000</div>
                                         </figcaption>
                                     </figure>
                                     <figure class="building_info">
@@ -767,41 +765,43 @@
                             </div>
                         </div>
                         <div class="side_menu">
-                            <div class="menu_tab">
-                                <span class="side_title">
-                                    <span class="title_text">
-                                        뉴스
-                                    </span>
-                                    <button type="button" class="more_button">
-                                        더보기
-                                    </button>
-                                </span>
-                                <span class="side_content">
-                                    <div class="text_line">3월 경기 아파트 매매 거래 7개월만에 1만건 돌파</div>
-                                    <div class="text_line">2025년 5월 전국 1만 7,176세대 분양예정</div>
-                                    <div class="text_line">5월 입주물량의 절반 이상, 경기 지역에서 공급</div>
-                                    <div class="text_line">서울·세종 3월 아파트 거래량 1월보다 두 배 ↑ </div>
-                                    <div class="text_line">4월 전국 2만 3,2730세대 분양예정</div>
-                                    <div class="text_line">4월 입주물량 전월 대비 48% ↓, 수도권 지방 모두 감소</div>
-                                </span>
-                            </div>
-                            <div class="menu_tab">
-                                <span class="side_title">
-                                    <span class="title_text">
-                                        공지사항
-                                    </span>
-                                    <button type="button" class="more_button">
-                                        더보기
-                                    </button>
-                                </span>
-                                <span class="side_content">
-                                    <div class="text_line">[공지] 직방 개인정보처리방침 (2025/05/07) 개정안내</div>
-                                    <div class="text_line">[공지] 직방 부동산 정보 이벤트 수신 약관 (2025/02/24) 개정안내</div>
-                                    <div class="text_line">[공지] 직방 개인정보 처리방침 (2024/12/31) 개정안내</div>
-                                    <div class="text_line">[공지] 직방 개인정보 처리방침 (2024/11/01) 개정안내</div>
-                                    <div class="text_line">[공지] 일부 단지 실거래 정보 미노출 및 업데이트 지연 안내</div>
-                                    <div class="text_line">[공지] 직방 개인정보 처리방침 (2024/09/19) 개정안내</div>
-                                </span>
+                            <div class="sides">
+                                <div class="menu_tab">
+                                    <div class="side_title">
+                                        <span class="title_text">
+                                            뉴스
+                                        </span>
+                                        <button type="button" class="more_button">
+                                            더보기
+                                        </button>
+                                    </div>
+                                    <div class="side_content">
+                                        <div class="text_line">3월 경기 아파트 매매 거래 7개월만에 1만건 돌파</div>
+                                        <div class="text_line">2025년 5월 전국 1만 7,176세대 분양예정</div>
+                                        <div class="text_line">5월 입주물량의 절반 이상, 경기 지역에서 공급</div>
+                                        <div class="text_line">서울·세종 3월 아파트 거래량 1월보다 두 배 ↑ </div>
+                                        <div class="text_line">4월 전국 2만 3,2730세대 분양예정</div>
+                                        <div class="text_line">4월 입주물량 전월 대비 48% ↓, 수도권 지방 모두 감소</div>
+                                    </div>
+                                </div>
+                                <div class="menu_tab">
+                                    <div class="side_title">
+                                        <div class="title_text">
+                                            공지사항
+                                        </div>
+                                        <button type="button" class="more_button">
+                                            더보기
+                                        </button>
+                                    </div>
+                                    <div class="side_content">
+                                        <div class="text_line">[공지] 직방 개인정보처리방침 (2025/05/07) 개정안내</div>
+                                        <div class="text_line">[공지] 직방 부동산 정보 이벤트 수신 약관 (2025/02/24) 개정안내</div>
+                                        <div class="text_line">[공지] 직방 개인정보 처리방침 (2024/12/31) 개정안내</div>
+                                        <div class="text_line">[공지] 직방 개인정보 처리방침 (2024/11/01) 개정안내</div>
+                                        <div class="text_line">[공지] 일부 단지 실거래 정보 미노출 및 업데이트 지연 안내</div>
+                                        <div class="text_line">[공지] 직방 개인정보 처리방침 (2024/09/19) 개정안내</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
