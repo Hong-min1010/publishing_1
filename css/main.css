@@ -45,7 +45,6 @@ body {
 
 footer {
   width: 100%;
-  /* margin-top: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,20 +53,12 @@ footer {
   box-shadow: 0px -8px 8px #e3e3e3;
 }
 
-/* img class = "logo" */
 .header_top > img {
     max-width: 200px;
     height: 100%;
     object-fit: contain;
     cursor: pointer;
 }
-
-/* .logo {
-    max-width: 200px;
-    height: 100%;
-    object-fit: contain;
-    cursor: pointer;
-} */
 
 .login {
     font-size: 16px;
@@ -80,17 +71,6 @@ footer {
     cursor: pointer;
 }
 
-/* .login_button {
-    font-size: 16px;
-    width: fit-content;
-    padding: 0px 10px;
-    height: 80%;
-    margin-right: 15px;
-    border: 1px solid #000;
-    border-radius: 15px;
-    cursor: pointer;
-} */
-
 .menu_login > div {
     display: flex;
     flex-direction: row;
@@ -100,21 +80,12 @@ footer {
     gap: 8px;
 }
 
-/* .login_side {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: auto;
-    cursor: pointer;
-} */
-
 .nav {
     width: 20%;
     font-size: large;
     font-weight: bold;
 }
 
-/* 아파트, 빌라,투룸... 과 로그인 서로 양쪽 끝 배치 */
 .menu {
     width: 100%;
     display: flex;
@@ -165,7 +136,6 @@ footer {
     gap: 10px;
 }
 
-/* 아파트, 빌라,투룸... 과 로그인 각각각 스타일 적용용 */
 .dropdown_menu {
     display: flex;
     flex-direction: column;
@@ -188,38 +158,19 @@ footer {
     font-weight: bold;
 }
 
-/* .button {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    margin-left: 10px;
-} */
-
 .circle > img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     border-radius: 50%;
     display: block;
 }
 
-/* .img_list {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-} */
-
 .circle {
     cursor: pointer;
     flex-direction: column;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,8 +223,8 @@ main {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 750px;
-    height: 850px;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     z-index: -1;
@@ -297,9 +248,10 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+    padding-top: 110px;
 }
 
 .main_content {
@@ -349,29 +301,24 @@ main {
     display: flex;
     border: solid;
     border-color: #ccc;
-    width: 70%;
+    width: 85%;
     height:fit-content;
     gap: 20;
     background-color: white;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
-.search > div {
-    margin-left: 20px;
+.search > input {
+    margin-left: 10px;
     font-size: 16px;
     font-weight: bold;
     color: gray; 
+    width: 100%;
+    border: none;
 }
 
-/* .search_text {
-    margin-left: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: gray;
-} */
-
-/* 검색 아이콘 */
 .material-symbols-outlined {
     font-size: 100px;
 }
@@ -380,14 +327,13 @@ main {
   padding-top: 15px;
   flex: 1 1 0;
   min-height: 0;
-  max-height: 700px; /* 원하는 높이 */
+  max-height: 350px;
   gap: 15px;
   overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
-  /* border: 1px solid #000; */
+  margin-top: 15px;
 }
 
 .building_info {
@@ -396,9 +342,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    /* border: 1px solid #000; */
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 230px;
     cursor: pointer;
     box-shadow: 3px 5px 8px #c3c3c3;
 }
@@ -424,37 +369,24 @@ main {
     position: absolute;
     top: 8px;
     right: 8px;
-    background: #ffb74d;
-    color: #fff;
+    background: #ffb84dd3;
+    color: rgb(69, 69, 69);
     font-size: 14px;
     font-weight: bold;
     padding: 6px 10px;
     border-radius: 16px;
     z-index: 2;
     pointer-events: none;
-    /* letter-spacing: -1px; */
 }
-
-/* .building_img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 .building_info > figcaption {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    /* text-align: center;
-    justify-content: center; */
+    height: fit-content;
     padding: 10px 10px;
     font-size: 16px;
-    color: #ffb74d;
+    color: black;
     font-weight: bold;
     background-color: white;
     border-bottom-left-radius: 12px;
@@ -466,32 +398,8 @@ figcaption > div:nth-child(2) {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: rgb(69, 69, 69);
 }
-
-/* .building_details {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 16px;
-    color: black;
-    background-color: white;
-} */
-
-/* .building_info > div {
-    background-color: rgb(255, 166, 0);
-    border: none;
-    margin-top: auto;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* .house_count {
-    background-color: rgb(255, 166, 0);
-    border: none;
-    margin-top: auto;
-    width: 100%;
-    margin-bottom: 10px;
-} */
 
 .sides {
     width: 100%;
@@ -514,7 +422,6 @@ figcaption > div:nth-child(2) {
     background-color: #FFF8EE;
     border-radius: 15px;
     border: none;
-    /* border: 1px solid #000; */
 }
 
 .menu_tab {
@@ -523,7 +430,6 @@ figcaption > div:nth-child(2) {
     border-radius: 15px;
     height: fit-content;
     gap: 20px;
-    /* background-color: white; */
 }
 
 .side_title {
@@ -550,12 +456,12 @@ figcaption > div:nth-child(2) {
     cursor: pointer;
     border: none;
     background-color: #FFE0B2;
-    color: #FF9821;
+    color: #424242;
 }
 
 .side_content{
     width: 100%;
-    height: 260px;
+    height: fit-content;
     cursor: pointer;
     padding: 15px 15px;
     background-color: white;
@@ -605,7 +511,6 @@ figcaption > div:nth-child(2) {
 }
 
 .banner_box {
-    /* border: 1px solid #000; */
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -626,7 +531,6 @@ figcaption > div:nth-child(2) {
     gap: 10px;
 }
 
-/* banner_box의 (1)번째 자식 .box_direction 안의 span 태그에 적용 */
 .banner_box:nth-child(1) .box_direction > span {
     background-color: #FFE9A0;
     border-radius: 50%;
